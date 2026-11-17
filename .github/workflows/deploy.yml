@@ -39,5 +39,5 @@ jobs:
       - name: Upload website to S3
         run: aws s3 sync . s3://${{ vars.AWS_S3_BUCKET }} --delete --exclude ".git/*" --exclude ".github/*" --exclude "tests/*" --exclude "*.test.mjs"
       - name: List bucket contents
-        run: aws s3 ls s3://${{ vars.S3_BUCKET }} --recursive
+        run: aws s3 ls s3://${{ vars.AWS_S3_BUCKET }} --recursive
 
