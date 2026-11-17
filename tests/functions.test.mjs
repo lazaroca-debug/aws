@@ -1,11 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { loadfunctions } from '../functions.mjs';
+import { showTime, loadReviews, renderReviews } from '../functions.mjs';
 
-test ('loadfunctions should return an object with the expected functions', () => {
-  const functions = loadfunctions();
-  assert.strictEqual(typeof functions.showTime, 'function');
-  assert.strictEqual(typeof functions.loadReviews, 'function');
-  assert.strictEqual(typeof functions.renderReviews, 'function');
+test('functions should be exported for the website', () => {
+  assert.strictEqual(typeof showTime, 'function');
+  assert.strictEqual(typeof loadReviews, 'function');
+  assert.strictEqual(typeof renderReviews, 'function');
 });
