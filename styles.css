@@ -1,9 +1,33 @@
 body{
-  padding: 25px; //notes 
+  padding: 25px; /* notes */
 }
-.title {
-	color: #666666;
+
+/* Main title: largest, gray */
+h1.title {
+  color: #666666;
+  font-size: 2.5em;
 }
+
+/* Subtitle under the title */
+h2.subtitle {
+  color: #2E5E8C;
+  font-size: 1.8em;
+}
+
+/* Contact section heading */
+h2.section-contact {
+  color: #1F7A4D;
+  font-size: 1.4em;
+}
+
+/* Review section heading */
+h2.section-review {
+  color: #7A3E9D;
+  font-size: 1.2em;
+}
+
+/* Review entries (smallest), red */
 .reviews {
   color: #B10202;
+  font-size: 1em;
 }
