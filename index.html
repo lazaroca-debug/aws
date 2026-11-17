@@ -6,18 +6,50 @@
   </head>
   <body>
       <h1 class="title">Lights Directions Application</h1>
-      <h2> Keep getting lost? Use our app to find your way to class!</h2>
+      <h2 class="subtitle"> Keep getting lost? Use our app to find your way to class!</h2>
       <p id="currentTime"></p>
-      <script src="script.js"></script>
       This app was built by students, for students. We undestand the sufferring of trying
       to find your class on the first day. Or even sometimes you just forget where to go. 
       Our app solves that. Try it out for free!
       <h3 class="reviews">I kept getting lost before this app. Now with this, I don't even have to think about where
         to go. Thank you! - User1 
       </h3>
-       <hgroup class="">
-        
-      </hgroup>
-      
+
+      <h2 class="section-contact">Contact Us</h2>
+      <form id="contactForm">
+        <p>
+          <label>
+            <input type="checkbox" id="unlvStudent" />
+            Check here if you are a UNLV student
+          </label>
+        </p>
+        <p>
+          <label for="phone">Phone number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="(702) 555-0123" />
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" />
+        </p>
+        <p>
+          <button type="submit">Have issues? Submit your info and we will reach out to you</button>
+        </p>
+        <p id="contactMessage"></p>
+      </form>
+
+      <h2 class="section-review">Leave a review</h2>
+      <form id="reviewForm">
+        <p>
+          <label for="reviewText">Your review:</label><br />
+          <textarea id="reviewText" name="reviewText" rows="4" cols="50" placeholder="Tell us how the app helped you"></textarea>
+        </p>
+        <p>
+          <button type="submit">Submit review</button>
+        </p>
+      </form>
+
+      <div id="reviewList"></div>
+
+      <script type="module" src="script.js"></script>
   </body>
 </html>
